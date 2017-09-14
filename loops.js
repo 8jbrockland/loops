@@ -9,8 +9,9 @@ console.log("Done Son!");
 }
 
 function loopTwo(){
-
-
+let sum=0
+for( sum=0;sum<powersOfTwo2;sum++)
+return sum
 }
 
 function loopThree(){
