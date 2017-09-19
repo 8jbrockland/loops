@@ -1,22 +1,35 @@
-function loopOne(){
-let time=30;
+function loopOne(time){
+
 
 while (time>0) {
-  console.log(time+" seconds left.");
+  if(time % 5 == 0){
+    console.log("AHHHHHHHHH"+time+" seconds left");
+  }
+  else if(time){
+    console.log(time+" seconds left.");
+
+  }
+  
   time=time-1;
 }
 console.log("Done Son!");
 }
 
-function loopTwo(){
-let sum=0
-for( sum=0;sum<powersOfTwo2;sum++)
-return sum
+function loopTwo(number, power){
+let sum=0;
+for(let p=0;p<=power;p++){
+	sum= sum +Math.pow(number, p);
+	}	
+return sum;
 }
 
-function loopThree(){
 
-
+function loopThree(symbol, number){
+  let lasttime="";
+  for (let s=1; s<=number; s++){
+    lasttime=lasttime+symbol;
+    console.log(lasttime);
+  }
 }
 
 function main(){
